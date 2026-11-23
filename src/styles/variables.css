@@ -1,0 +1,16 @@
+
+:root {
+    /* Цвета */
+    --palette-ink: #191919;
+    --palette-paper: #F6F2E9;
+    --palette-acidlime: #D7FF45;
+    --palette-electricblue: #3837D9;
+    --palette-softpeach: #FDBEA6;
+    --palette-muted: #77756F;
+
+    /* Шрифты */
+    --font-main-family: Inter, sans-serif;
+
+    /* Размеры */
+    --container-width: 1440px;
+}

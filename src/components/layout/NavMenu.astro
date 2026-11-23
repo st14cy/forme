@@ -1,0 +1,23 @@
+
+---
+import Link from "../common/Link.astro";
+
+const naviation=[
+    {title: "Главная", href: '/'},
+    { title: "Каталог", href: "/catalog" },
+    { title: "О нас", href: "/about" },
+    { title: "Контакты", href: "/contacts" },
+]
+---
+
+<nav aria-label="Основная навигация">
+    <ul class="flex items-center">
+        {naviation.map((item) => (
+                <li>
+                    <Link href={item.href} variant="nav">
+                        {item.title}
+                    </Link>
+                </li>
+        ))}
+    </ul>
+</nav>
