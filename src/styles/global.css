@@ -1,0 +1,73 @@
+
+@import "tailwindcss";
+@import "./variables.css";
+
+@theme {
+    /* Брейкпоинты */
+    --breakpoint-sm: 390px;
+    --breakpoint-md: 834px;
+    --breakpoint-lg: 1440px;
+}
+
+@theme inline {
+    /* Цвета */
+    --color-ink: var(--palette-ink);
+    --color-paper: var(--palette-paper);
+    --color-acidlime: var(--palette-acidlime);
+    --color-electricblue: var(--palette-electricblue);
+    --color-softpeach: var(--palette-softpeach);
+    --color-muted: var(--palette-muted);
+
+    /* Шрифты */
+    --font-main: var(--font-main-family);
+
+}
+
+/* Глобальные стили */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: var(--palette-paper);
+    color: var(--palette-ink);
+    font-family: var(--font-main-family);
+    -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
