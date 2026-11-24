@@ -3,7 +3,7 @@
 import type { HTMLAttributes } from "astro/types";
 
 interface Props extends HTMLAttributes<"a"> {
-    variant?: "default" | "nav";
+    variant?: "default" | "nav" | "button";
     href: string;
 }
 
@@ -33,18 +33,15 @@ const isActive =
         class:list={[
             "inline-flex items-center uppercase",
 
-            "pt-5 pb-5 pr-3.5 pl-5 text-[14px]",
-            "md:pt-5 md:pb-5 md:pr-3.5 md:pl-6",
-            "lg:pt-5 lg:pb-7 lg:pr-3.5 lg:pl-6 lg:text-[20px]",
-
             {
-                "font-semibold": variant === "default",
-                "font-normal": variant === "nav",
+                "font-semibold lg:pt-5 lg:pb-7 lg:pr-3.5 lg:pl-6 lg:text-[20px] md:pt-5 md:pb-5 md:pr-3.5 md:pl-6 pt-5 pb-5 pr-3.5 pl-5 text-[14px]": variant === "default",
+                "font-normal text-[12px] lg:text-[13px]  ": variant === "nav",
+                " text-white bg-black  py-6 pl-6 pr-[74px] font-semibold hover:bg-electricblue active:bg-acidlime active:text-ink ": variant === "button",
             },
 
             {
-                "text-acidlime": isActive,
-                "text-ink hover:text-acidlime": !isActive,
+                "text-acidlime": variant !== "button" && isActive,
+                "text-ink hover:text-acidlime": variant !== "button" && !isActive,
             },
 
             className,
