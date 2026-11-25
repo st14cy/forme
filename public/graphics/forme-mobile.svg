@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 350 350" fill="none" role="img" aria-labelledby="title">
+  <title id="title">FORME — мобильная абстракция</title>
+  <g id="forme-mobile-abstraction">
+    <rect x="49" y="262.5" width="262.5" height="70" rx="10" fill="#FDBEA6"/>
+    <ellipse cx="175" cy="175" rx="105" ry="115.5" fill="#191919"/>
+    <ellipse cx="175" cy="175" rx="96.25" ry="108.5" fill="#D7FF45"/>
+    <rect x="157.5" y="157.5" width="52.5" height="140" rx="26.25" fill="#3837D9"/>
+    <ellipse cx="175" cy="136.5" rx="49" ry="45.5" fill="#FDBEA6"/>
+    <circle cx="178.5" cy="129.5" r="21" fill="#191919"/>
+  </g>
+</svg>

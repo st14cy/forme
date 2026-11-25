@@ -1,0 +1,33 @@
+---
+interface Props {
+    desktop: string;
+    tablet: string;
+    mobile: string;
+    class?: string;
+}
+
+const {
+    desktop,
+    tablet,
+    mobile,
+    class: className = "",
+} = Astro.props;
+---
+
+<picture class={className}>
+    <source
+            media="(min-width: 1280px)"
+            srcset={desktop}
+    />
+
+    <source
+            media="(min-width: 768px)"
+            srcset={tablet}
+    />
+
+    <img
+            src={mobile}
+            alt=""
+            class="block w-full h-auto"
+    />
+</picture>

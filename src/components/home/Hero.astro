@@ -3,31 +3,64 @@ import Link from "../common/Link.astro";
 ---
 
 
-<section class="flex flex-col pt-10 pb-[27px] border-ink border-b-2">
-   <h1 class="text-[38px] leading-[1.1] font-bold uppercase">
-       пространство с характером
+<section class="flex flex-col pt-10 pb-[27px] border-ink border-b-2
+ md:grid md:grid-cols-[auto_auto] md:grid-rows-[auto_auto_auto_auto]">
+   <h1 class="text-[36px] leading-[1.1] mb-6 font-bold  uppercase md:col-span-2 md:text-[77px]">
+       пространство с характером.
    </h1>
+    <div class="flex mb-[46px] flex-col md:justify-between md:row-start-2 md:row-span-2 ">
+        <div class="flex flex-col md:gap-[13px]">
+            <p class="hidden  md:block ">
+                01 / манифест
+            </p>
 
-    <p class="hidden  md:block ">
-        01 / манифест
-    </p>
-
-    <p class="text-[20px] font-medium leading-[1.1] mb-11.5">
-        Интерьеры и объекты, которые
-        не пытаются быть как все.
-    </p>
-
-
-    <img alt="Изображение" class="mb-5.5"/>
-
-    <Link href="/"
-            variant="button"
-            class="mb-12.5 ">
-        Обсудить проект
-    </Link>
+            <p class="text-[19px] font-medium leading-[1.1]">
+                Интерьеры и объекты, которые
+                не пытаются быть как все.
+            </p>
+        </div>
 
 
-    <p class="text-[12px] font-semibold uppercase ">
+        <div class="hidden md:block mb-12.5 md:max-h-[66px] md:max-w-[375px] ">
+            <Link href="/"
+                    variant="button"
+            >
+                Обсудить проект
+            </Link>
+        </div>
+    </div>
+    <div class="bg-electricblue row-span-2 pt-[17px] pl-[20px] mb-[23px]
+                md:pt-[15px] md:pl-[18px] md:col-start-2
+                lg:bg-transparent">
+        <p class="hidden font-semibold text-white md:block lg:hidden">
+            FORM / 01
+        </p>
+        <p class=" font-semibold text-white md:hidden">
+            01 / МАНИФЕСТ
+        </p>
+        <picture >
+            <source media="(min-width:1280px)"
+                    srcset="/graphics/forme-desktop.svg"/>
+
+            <source media="(min-width:768px)"
+                    srcset="/graphics/forme-tablet.svg"/>
+
+            <img
+                    src="/graphics/forme-mobile.svg"
+                    alt=""
+                    class="block w-full h-auto"
+            />
+        </picture>
+    </div>
+
+        <Link   href="/" class=" mb-[49px] md:hidden"
+                variant="button"
+        >
+            Обсудить проект
+        </Link>
+
+    <p class="text-[12px] font-semibold uppercase md:row-start-4 ">
         НЕОЖИДАННО. ФУНКЦИОНАЛЬНО. ВАШЕ.
     </p>
+
 </section>
