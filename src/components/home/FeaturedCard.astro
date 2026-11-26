@@ -1,0 +1,20 @@
+---
+import {Favorites} from "../../types/favorites";
+interface Props{
+    product: Favorites
+}
+
+const {product } = Astro.props;
+---
+
+
+<article>
+    <img src={product.image}
+    alt={product.imageAlt}/>
+    <h2>
+        {product.title}
+    </h2>
+    <p>
+        {product.discipline}
+    </p>
+</article>
