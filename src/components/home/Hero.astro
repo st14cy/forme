@@ -2,48 +2,114 @@
 import Link from "../common/Link.astro";
 ---
 
+<section class="
+    flex flex-col pt-10 pb-[27px] border-ink border-b-2
+    md:grid
+    md:grid-cols-[auto_312px]
+    md:grid-rows-[auto_auto_auto_auto]
+    lg:grid-cols-2
+    lg:grid-rows-[auto_auto_auto]
+    lg:pt-12
+    lg:pb-[19px]
+">
 
-<section class="flex flex-col pt-10 pb-[27px] border-ink border-b-2
- md:grid md:grid-cols-[auto_auto] md:grid-rows-[auto_auto_auto_auto]">
-   <h1 class="text-[36px] leading-[1.1] mb-6 font-bold  uppercase md:col-span-2 md:text-[77px]">
-       пространство с характером.
-   </h1>
-    <div class="flex mb-[46px] flex-col md:justify-between md:row-start-2 md:row-span-2 ">
+    <h1 class="
+        text-[36px] leading-[1.1] mb-6 font-bold uppercase
+        md:col-span-2
+        md:text-[77px]
+        lg:text-[119px]
+        lg:leading-[127px]
+        lg:mb-[60px]
+    ">
+        пространство <br/> с характером.
+    </h1>
+
+    <div class="
+        flex flex-col mb-[46px]
+        md:justify-between
+        md:row-start-2
+        md:row-span-2
+        lg:col-start-1
+        lg:row-span-1
+        lg:mb-0
+        lg:min-h-[252px]
+    ">
+
         <div class="flex flex-col md:gap-[13px]">
-            <p class="hidden  md:block ">
+
+            <p class="
+                hidden uppercase font-semibold text-[#7A786F]
+                md:block
+                md:text-[14px]
+                lg:text-[15px]
+                lg:leading-5
+            ">
                 01 / манифест
             </p>
 
-            <p class="text-[19px] font-medium leading-[1.1]">
+            <p class="
+                text-[19px] font-medium leading-[1.1]
+                md:text-[27px]
+                md:mr-[152px]
+                lg:text-[32px]
+                lg:mr-0
+                lg:max-w-[502px]
+            ">
                 Интерьеры и объекты, которые
                 не пытаются быть как все.
             </p>
+
         </div>
 
 
-        <div class="hidden md:block mb-12.5 md:max-h-[66px] md:max-w-[375px] ">
+        <div class="
+            hidden mb-12.5
+            md:block
+            md:max-h-[66px]
+            md:mt-auto
+            md:mb-5
+            md:mr-[83px]
+            lg:mb-0
+            lg:mr-0
+            lg:max-h-none
+            lg:max-w-[310px]
+            lg:w-full
+        ">
             <Link href="/"
-                    variant="button"
+                  class="w-full lg:h-[68px] md:max-w-[375px] lg:max-w-[310px]"
+                  variant="button"
             >
-                Обсудить проект
+                ОБСУДИТЬ ПРОЕКТ   ↗
             </Link>
         </div>
+
     </div>
-    <div class="bg-electricblue row-span-2 pt-[17px] pl-[20px] mb-[23px]
-                md:pt-[15px] md:pl-[18px] md:col-start-2
-                lg:bg-transparent">
-        <p class="hidden font-semibold text-white md:block lg:hidden">
+
+    <div class="
+        flex flex-col bg-electricblue
+        row-span-2
+        pt-[17px]
+        pl-[20px]
+        mb-[23px]
+        md:pt-[15px]
+        md:pl-[18px]
+        md:col-start-2
+        lg:hidden
+    ">
+
+        <p class="hidden font-semibold text-white md:block">
             FORM / 01
         </p>
-        <p class=" font-semibold text-white md:hidden">
+
+        <p class="font-semibold text-white md:hidden">
             01 / МАНИФЕСТ
         </p>
-        <picture >
-            <source media="(min-width:1280px)"
-                    srcset="/graphics/forme-desktop.svg"/>
 
-            <source media="(min-width:768px)"
-                    srcset="/graphics/forme-tablet.svg"/>
+        <picture>
+            <source
+                    media="(834px <= width < 1440px)"
+                    srcset="/graphics/forme-tablet.svg"
+            />
 
             <img
                     src="/graphics/forme-mobile.svg"
@@ -53,13 +119,38 @@ import Link from "../common/Link.astro";
         </picture>
     </div>
 
-        <Link   href="/" class=" mb-[49px] md:hidden"
-                variant="button"
-        >
-            Обсудить проект
-        </Link>
+    <div class="  hidden
+        lg:block
+        lg:col-start-2
+        lg:row-start-2
+        lg:row-span-2
+        lg:justify-self-center
+        lg:self-start
+        lg:pt-[30px]
+    ">
+        <img src="/graphics/forme-desktop.svg"
+             alt=""
+             class="block w-[442px] h-[321px]"
+        />
+    </div>
 
-    <p class="text-[12px] font-semibold uppercase md:row-start-4 ">
+    <Link href="/"
+          class="mb-[49px] md:hidden"
+          variant="button"
+    >
+        ОБСУДИТЬ ПРОЕКТ    ↗
+    </Link>
+
+    <p class="
+        text-[12px] font-semibold uppercase
+        md:row-start-4
+        md:text-[15px]
+        lg:col-start-1
+        lg:row-start-3
+        lg:self-end
+        lg:leading-5
+        lg:mb-[5px]
+    ">
         НЕОЖИДАННО. ФУНКЦИОНАЛЬНО. ВАШЕ.
     </p>
 

@@ -1,10 +1,56 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg
+        width="442"
+        height="321"
+        viewBox="19 38 223 166"
+        preserveAspectRatio="none"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
   <title>FORME abstraction combined</title>
+
   <g id="forme-abstraction-combined">
-    <rect x="19" y="162" width="223" height="42" rx="4" fill="#F6B7A5"/>
-    <ellipse cx="128" cy="110" rx="88" ry="69" fill="#D8F73D" stroke="#171717" stroke-width="6"/>
-    <ellipse cx="129" cy="91" rx="44.5" ry="30.5" fill="#F6BEAD"/>
-    <ellipse cx="130" cy="82" rx="17.5" ry="13.5" fill="#171717"/>
-    <rect x="112" y="96" width="44" height="89" rx="22" fill="#3C39DB"/>
+    <rect
+            x="19"
+            y="162"
+            width="223"
+            height="42"
+            rx="4"
+            fill="#F6B7A5"
+    />
+
+    <ellipse
+            cx="128"
+            cy="110"
+            rx="88"
+            ry="69"
+            fill="#D8F73D"
+            stroke="#171717"
+            stroke-width="6"
+    />
+
+    <ellipse
+            cx="129"
+            cy="91"
+            rx="44.5"
+            ry="30.5"
+            fill="#F6BEAD"
+    />
+
+    <ellipse
+            cx="130"
+            cy="82"
+            rx="17.5"
+            ry="13.5"
+            fill="#171717"
+    />
+
+    <rect
+            x="112"
+            y="96"
+            width="44"
+            height="89"
+            rx="22"
+            fill="#3C39DB"
+    />
   </g>
 </svg>
